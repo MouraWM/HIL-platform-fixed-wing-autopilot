@@ -1,10 +1,10 @@
 # HIL platform for fixed wing autopilot – A tutorial
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/images/wd.jpg)
 
 ![](https://img.shields.io/github/stars/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/forks/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/tag/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://https://img.shields.io/github/release/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/issues/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/bower/MouraWM/HIL-platform-fixed-wing-autopilot.svg)
 
-### Features
+## Features
 
 This platform consists of a AP embedded in a dedicated microcontroller to control a simulated fixed-wing aircraft in a Matlab Simulink® programming environment.
 The structure allows its adaptation to the needs of new functionalities that want to be introduced. For this purpose, two modules that make up the AP system of a fixed-wing aircraft were loaded into the microcontroller: the control system, responsible for calculating and generating the commands for the aircraft's control surfaces so that it performs a smooth and stable flight; and the guidance system, responsible for generating the reference signals for the aircraft to carry out a predetermined flight mission. 
