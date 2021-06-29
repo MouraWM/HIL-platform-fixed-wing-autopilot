@@ -14,4 +14,12 @@ The embedded system was made available for the Arduino platform being tested on 
 The communication between the HIL and the simulated aircraft takes place through Matlab Simulink® blocks and is made available through of the asynchronous serial communication protocol. 
 The necessary steps for connection, configuration, system loading, execution on the microcontroller, modeling and simulation of the aircraft, are described in:
 
+## Autopilot Development for UAV
 
+The development took place in two stages. In the first stage, it was executed communication testing and
+configuration of the serial communication protocol between the microcontroller and the simulated aircraft in Matlab
+Simulink®. Once configured and tested, the HIL platform's autopilot implementation followed.
+
+Serial communication test: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/Communication_Tests)
+
+HIL Test Platform Implementation: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/HIL)
