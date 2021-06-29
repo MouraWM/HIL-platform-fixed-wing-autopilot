@@ -23,4 +23,7 @@ Simulink®. Once configured and tested, the HIL platform's autopilot implementat
 Serial communication test: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/Communication_Tests)
 
 HIL Test Platform Implementation: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/HIL)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6c8cfc635be34d8f776538090930a351c4658de8
