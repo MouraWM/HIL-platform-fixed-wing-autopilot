@@ -25,14 +25,13 @@ coordinate system (NED). The Table 1 shows the tested example.
 These files must be compiled on the Arduino platform and embedded in the
 chosen microcontroller.
 
-Table 1. Waypoints mapping.
-
 |     | WP1 | WP2 | WP3 | WP4 | WP5 | WP6 | WP7 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |NM   |0|1000|-809.0170|309.0170|309.0170|-809.0170|1000|
 |EM   |0|0|587.7853|-951.0565|951.0565|-587.7853|0|
 |DM   |400|400|420|380|420|380|400|
 |VMS  |20|20|20|20|20|20|20|
+> Table 1. Waypoints mapping.
 
 In the second folder, there are the Matlab Simulink® files to be used in
 the simulation.
@@ -43,6 +42,13 @@ defines the input vectors and aircraft steady states determined
 according to Eq. ; loads the file "Piper J3 1\_4 VT0\_20.mat" which
 contains the parameters of the linearized model of the fixed-wing
 aircraft used to be simulated; and opens the file "HIL\_Serial.slx".
+
+$$
+alignl { vec {u}= left ( {%PI} ~ ~ {{%delta} rsub {e}} ~ ~ {{%delta} rsub {a}} ~ ~ {{%delta} rsub {r}} right ) rsup {T} } newline
+
+
+vec {y}= left ( {{V} rsub {t}} ~ ~ {%alfa}  ~ ~ {%beta}  ~ ~ {p}  ~ ~ {q} ~ ~ {r} ~ ~ {%phi} ~ ~ {%theta} ~ ~ {%psi}~ ~ {{x} rsub {n}} ~ ~ {{y} rsub {n}} ~~ {H}right ) rsup {T}
+$$
 
 ![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig26.png)
 
