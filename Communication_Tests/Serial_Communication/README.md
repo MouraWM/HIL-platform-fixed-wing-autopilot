@@ -29,8 +29,7 @@ Linux. The letter **x** represents the port number provided by the
 operating system. Once the microcontroller is connected, these values
 can be selected directly in the "Communication Port" parameter. Other
 parameters to be observed are the "Baud Rate", "Header" and
-"Terminator", configured with their default options according to Figure
-.
+"Terminator", configured with their default options according to Figure 2.
 
 If the communication between the microcontroller and Matlab Simulink® is
 working correctly, the graph in Figure will be presented. That is,
@@ -42,8 +41,9 @@ oscilloscope (Figure 3B). Note that the returned signal (detailed in the
 enlarged image) is a quantized signal.
 
 More information about the settings of the communication blocks and
-their parameters can be found in Mariga (2019).
+their parameters can be found in Mariga (https://github.com/leomariga/Simulink-Arduino-Serial).
 
 ![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig16.png)!
 > Figure 3. Results presented in the osciloscope: (a) input
 signal, (b) signal received from the microcontroller
+
