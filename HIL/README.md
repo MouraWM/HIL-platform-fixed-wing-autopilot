@@ -27,13 +27,12 @@ chosen microcontroller.
 
 Table 1. Waypoints mapping.
 
-  ----------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- --------------------------------------------------------------------- ---------------------------------------------------------------------- ----------------------------------------------------------------------
-                                                                          ![](./ObjectReplacements/Object 1){width="0.751cm" height="0.531cm"}   ![](./ObjectReplacements/Object 2){width="0.767cm" height="0.531cm"}   ![](./ObjectReplacements/Object 3){width="0.766cm" height="0.531cm"}   ![](./ObjectReplacements/Object 4){width="0.766cm" height="0.531cm"}   ![](./ObjectReplacements/Object 5){width="0.76cm" height="0.531cm"}   ![](./ObjectReplacements/Object 6){width="0.762cm" height="0.531cm"}   ![](./ObjectReplacements/Object 7){width="0.769cm" height="0.531cm"}
-  ![](./ObjectReplacements/Object 8){width="1.011cm" height="0.508cm"}    0                                                                      1000                                                                   -809.0170                                                              309.0170                                                               309.0170                                                              -809.0170                                                              1000
-  ![](./ObjectReplacements/Object 9){width="0.963cm" height="0.508cm"}    0                                                                      0                                                                      587.7853                                                               -951.0565                                                              951.0565                                                              -587.7853                                                              0
-  ![](./ObjectReplacements/Object 10){width="1.011cm" height="0.508cm"}   400                                                                    400                                                                    420                                                                    380                                                                    420                                                                   380                                                                    400
-  ![](./ObjectReplacements/Object 11){width="1.355cm" height="0.508cm"}   20                                                                     20                                                                     20                                                                     20                                                                     20                                                                    20                                                                     20
-  ----------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- --------------------------------------------------------------------- ---------------------------------------------------------------------- ----------------------------------------------------------------------
+|     | WP1 | WP2 | WP3 | WP4 | WP5 | WP6 | WP7 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|NM   |0|1000|-809.0170|309.0170|309.0170|-809.0170|1000|
+|EM   |0|0|587.7853|-951.0565|951.0565|-587.7853|0|
+|DM   |400|400|420|380|420|380|400|
+|VMS  |20|20|20|20|20|20|20|
 
 In the second folder, there are the Matlab Simulink® files to be used in
 the simulation.
@@ -45,9 +44,7 @@ according to Eq. ; loads the file "Piper J3 1\_4 VT0\_20.mat" which
 contains the parameters of the linearized model of the fixed-wing
 aircraft used to be simulated; and opens the file "HIL\_Serial.slx".
 
-  ---------------------------------------------------------------------- ------------------
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig26.png)!
-  ---------------------------------------------------------------------- ------------------
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig26.png)
 
 This last file, "HIL\_Serial.slx", contains the Matlab Simulink® blocks,
 shown in Figure 1, and it is responsible for performing the simulation.
@@ -55,7 +52,7 @@ It is composed of the "HIL (Serial) -- Navigation / Guidance / Control"
 block, the "Aircraft" block and the state and input vectors (defined in
 Eq. ) calculated on each interaction.
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig18.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig18.png)
 > Figure 1. Matlab Simulink® blocks from the
 "HIL\_Serial.slx" file.
 
@@ -72,7 +69,7 @@ when the simulated aircraft reaches the final waypoint; and the altitude
 and yaw angle (![](./ObjectReplacements/Object 16){width="0.432cm"
 height="0.418cm"}) reference signals.
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig19.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig19.png)
 > Figure 2. Subsystem "HIL (Serial) -- Navigation / Guidance
 / Control" detail.
 
@@ -81,7 +78,7 @@ blocks follow the same configuration previously reported in Figure 5.
 For the "Serial Receive" block, the "Data Size" parameter must be set to
 a seven-position vector, as shown in Figure 3.
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig20.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig20.png)
 > Figure 3. Configuration of the "Serial Receive" block.
 
 Finally, the "Aircraft" block (see Figure 1) is implemented by the
@@ -97,7 +94,7 @@ Once the simulation is finished, the graphics for the analysis of the
 output signals (trajectory, speed, altitude and yaw angle) can be
 generated through the file \"plot\_graphics.m\".
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig21.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig21.png)
 > Figure 4. Detail of the Aircraft subsystem.
 
 ## ResultS AND DISCUSSIONS
@@ -136,14 +133,14 @@ Observing the graphics we see that the waypoints were reached and the
 results are equal to those found by Santos (2018, p. 105) thus showing
 the success of the mission.
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig22.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig22.png)
 > Figure 5. Trajectory performed by aircraft in simulation.
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig23.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig23.png)
 > Figure 6. Speed performed by aircraft in simulation. 
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig24.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig24.png)
 > Figure 7. Altitude performed by aircraft in simulation. 
 
-![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig25.png)!
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig25.png)
 > Figure 8. Angle performed by aircraft in simulation.
