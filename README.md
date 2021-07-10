@@ -20,10 +20,7 @@ The development took place in two stages. In the first stage, it was executed co
 configuration of the serial communication protocol between the microcontroller and the simulated aircraft in Matlab
 Simulink®. Once configured and tested, the HIL platform's autopilot implementation followed.
 
-Serial communication test: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/Communication_Tests)
+Serial communication test: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/Communication_Tests/Serial_Communication)
 
 HIL Test Platform Implementation: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/HIL)
-<<<<<<< HEAD
 
-=======
->>>>>>> 6c8cfc635be34d8f776538090930a351c4658de8
