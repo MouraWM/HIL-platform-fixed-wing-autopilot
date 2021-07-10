@@ -25,7 +25,7 @@ coordinate system (NED). The Table 1 shows the tested example.
 These files must be compiled on the Arduino platform and embedded in the
 chosen microcontroller.
 
-Table 1[]{#anchor}. Waypoints mapping (Santos, 2018).
+Table 1. Waypoints mapping.
 
   ----------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- --------------------------------------------------------------------- ---------------------------------------------------------------------- ----------------------------------------------------------------------
                                                                           ![](./ObjectReplacements/Object 1){width="0.751cm" height="0.531cm"}   ![](./ObjectReplacements/Object 2){width="0.767cm" height="0.531cm"}   ![](./ObjectReplacements/Object 3){width="0.766cm" height="0.531cm"}   ![](./ObjectReplacements/Object 4){width="0.766cm" height="0.531cm"}   ![](./ObjectReplacements/Object 5){width="0.76cm" height="0.531cm"}   ![](./ObjectReplacements/Object 6){width="0.762cm" height="0.531cm"}   ![](./ObjectReplacements/Object 7){width="0.769cm" height="0.531cm"}
@@ -46,7 +46,7 @@ contains the parameters of the linearized model of the fixed-wing
 aircraft used to be simulated; and opens the file "HIL\_Serial.slx".
 
   ---------------------------------------------------------------------- ------------------
-  ![](./ObjectReplacements/Object 12){width="9.14cm" height="1.282cm"}   []{#anchor-1}(1)
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig26.png)!
   ---------------------------------------------------------------------- ------------------
 
 This last file, "HIL\_Serial.slx", contains the Matlab Simulink® blocks,
@@ -55,9 +55,8 @@ It is composed of the "HIL (Serial) -- Navigation / Guidance / Control"
 block, the "Aircraft" block and the state and input vectors (defined in
 Eq. ) calculated on each interaction.
 
-FIG 18
-
-Figure 1. Matlab Simulink® blocks from the
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig18.png)!
+> Figure 1. Matlab Simulink® blocks from the
 "HIL\_Serial.slx" file.
 
 The "HIL (Serial) - Navigation / Guidance / Control" block (Figure 2) is
@@ -73,9 +72,8 @@ when the simulated aircraft reaches the final waypoint; and the altitude
 and yaw angle (![](./ObjectReplacements/Object 16){width="0.432cm"
 height="0.418cm"}) reference signals.
 
-FIG19
-
-Figure 2. Subsystem "HIL (Serial) -- Navigation / Guidance
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig19.png)!
+> Figure 2. Subsystem "HIL (Serial) -- Navigation / Guidance
 / Control" detail.
 
 The configurations of the "Serial Configuration" and "Serial Send"
@@ -83,9 +81,8 @@ blocks follow the same configuration previously reported in Figure 5.
 For the "Serial Receive" block, the "Data Size" parameter must be set to
 a seven-position vector, as shown in Figure 3.
 
-FIG 20
-
-Figure 3. Configuration of the "Serial Receive" block.
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig20.png)!
+> Figure 3. Configuration of the "Serial Receive" block.
 
 Finally, the "Aircraft" block (see Figure 1) is implemented by the
 subsystem shown in Figure 4. This block receives the state vector ()
@@ -100,9 +97,8 @@ Once the simulation is finished, the graphics for the analysis of the
 output signals (trajectory, speed, altitude and yaw angle) can be
 generated through the file \"plot\_graphics.m\".
 
-FIG 21
-
-Figure 4. Detail of the Aircraft subsystem.
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig21.png)!
+> Figure 4. Detail of the Aircraft subsystem.
 
 ## ResultS AND DISCUSSIONS
 
@@ -140,18 +136,14 @@ Observing the graphics we see that the waypoints were reached and the
 results are equal to those found by Santos (2018, p. 105) thus showing
 the success of the mission.
 
-FIG 22
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig22.png)!
+> Figure 5. Trajectory performed by aircraft in simulation.
 
-Figure 5. Trajectory performed by aircraft in simulation.
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig23.png)!
+> Figure 6. Speed performed by aircraft in simulation. 
 
-FIG 23
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig24.png)!
+> Figure 7. Altitude performed by aircraft in simulation. 
 
-Figure 6. Speed performed by aircraft in simulation. 
-
-FIG 24
-
-Figure 7. Altitude performed by aircraft in simulation. 
-
-FIG 25
-
-Figure 8. Angle performed by aircraft in simulation.
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig25.png)!
+> Figure 8. Angle performed by aircraft in simulation.
