@@ -14,6 +14,20 @@ The embedded system was made available for the Arduino platform being tested on 
 The communication between the HIL and the simulated aircraft takes place through Matlab Simulink® blocks and is made available through of the asynchronous serial communication protocol. 
 The necessary steps for connection, configuration, system loading, execution on the microcontroller, modeling and simulation of the aircraft, are described in:
 
+
+## SYSTEM OF AUTOPILOT for UAV
+
+The autopilot for an autonomous vehicle can be represented as in Figure 1. We are considering the autopilot for a fixed wing aircraft also composed by this generic blocks. These blocks are implemented using electronic components embedded in the aircraft, such as sensors, actuators and microprocessors/microcontrollers, and the software running in them.
+
+![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig11.png)
+> Figure 1. Autopilot blocks.
+
+The Navigation block determines the aircraft's states (position, speed and acceleration) in relation to a given reference frame based on data collected by sensors. This information is treated and made available in navigation data for the Guidance and Control blocks.
+The Guidance block determines the best trajectory and/or the reference signals to be reached by the vehicle to execute a desired maneuver. It can be responsible for planning and generating trajectory references to be used by the Control block for the aircraft to execute a desired mission or simple as to compute reference signals to reach predefined waypoints.
+The Control block calculates the inputs for the actuators of the moving components (elevator, aileron, rudder and throttle) in order to stabilize the aircraft and effectively execute the desired maneuver.
+In this work, the sensors data arrives directly at the Navigation block in an ideal way. With this, the autopilot includes, through programming, the functions of the Guidance and Control block. This implementation was embedded in low-cost microcontrollers from the Arduino platform (Arduino, 2021), being tested on microcontrollers ATmega328P (Arduino UNO) from Microchip (Atmega328p, 2020), Stm32f103c8 from STM Microeletronics (Stm32f103x8, 2015), Esp8266 and Esp32 from Expressif Systems (Esp8266, 2020; Esp32, 2021). For that, the embedded programs have been implemented, in their basic programming standards, for the Serial communication protocol meeting all the microcontrollers mentioned above.
+The Aircraft block represents the fixed-wing aircraft to be simulated using Matlab Simulink®. In this work we used the parameters of a Piper J-3 Cub ¼ whose measurements have a quarter of the scale of the original measurements of the Piper J-3 Cub produced by “Piper Aircraft”. 
+
 ## Autopilot Development for UAV
 
 The development took place in two stages. In the first stage, it was executed communication testing and
