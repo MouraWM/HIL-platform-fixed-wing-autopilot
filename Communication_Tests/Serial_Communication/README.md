@@ -3,7 +3,7 @@
 ![](https://img.shields.io/github/stars/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/forks/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://https://img.shields.io/github/release/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/issues/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/bower/MouraWM/HIL-platform-fixed-wing-autopilot.svg)
 
 
-## serial-communication-test
+## Serial Communication Test
 
 For the implementation using the serial communication protocol, any microcontroller that meets the Arduino platform can be chosen. For the serial protocol communication and configuration test, it was made available the examples to be used between the microcontroller and the aircraft simulated in Matlab Simulink®. To do this, download the "Serial\_Communication" folder and load the "HIL\_Serial\_Test.ino" file for the chosen microcontroller. After that, the file "Hil\_Serial\_Test.slx", Figure 1, is loaded in Matlab Simulink® environment.
 
