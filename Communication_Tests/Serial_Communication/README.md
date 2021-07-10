@@ -40,9 +40,6 @@ returns it to the Matlab Simulink®, which displays it on the
 oscilloscope (Figure 3B). Note that the returned signal (detailed in the
 enlarged image) is a quantized signal.
 
-More information about the settings of the communication blocks and
-their parameters can be found in Mariga (https://github.com/leomariga/Simulink-Arduino-Serial).
-
 ![](https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/blob/main/images/Fig16.png)!
 > Figure 3. Results presented in the osciloscope: (a) input
 signal, (b) signal received from the microcontroller
