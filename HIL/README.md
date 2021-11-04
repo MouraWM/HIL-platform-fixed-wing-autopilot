@@ -3,8 +3,7 @@
 ![](https://img.shields.io/github/stars/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/forks/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://https://img.shields.io/github/release/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/issues/MouraWM/HIL-platform-fixed-wing-autopilot.svg) ![](https://img.shields.io/github/bower/MouraWM/HIL-platform-fixed-wing-autopilot.svg)
 
 ## HIL Test Platform Implementation
-
-This tutorial is composed by the source files of the implementation of a fixed-wing aircraft HIL control platform whose content is awaiting review for publication in the 26th COBEM.
+This tutorial is composed by the source files of the implementation of a fixed-wing aircraft HIL control platform whose content was accepted for publication in the 26th COBEM.
 
 ## Features
 
