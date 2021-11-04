@@ -5,7 +5,7 @@
 
 ## Serial Communication Test
 
-This tutorial is composed by the source files of the implementation of a fixed-wing aircraft HIL control platform whose content is awaiting review for publication in the 26th COBEM.
+This tutorial is composed by the source files of the implementation of a fixed-wing aircraft HIL control platform whose content was accepted for publication in the 26th COBEM.
 
 ## Features
 
