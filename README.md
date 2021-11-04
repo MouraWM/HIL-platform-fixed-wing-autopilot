@@ -6,7 +6,7 @@
 
 ## Features
 
-This tutorial is composed by the source files of the implementation of a fixed-wing aircraft HIL control platform whose content is awaiting review for publication in the 26th COBEM. The development took place in two stages. In the first stage, it was executed communication testing and configuration of the serial communication protocol between the microcontroller and the simulated aircraft in Matlab Simulink®. Once configured and tested, the HIL platform's autopilot implementation followed.
+This tutorial is composed by the source files of the implementation of a fixed-wing aircraft HIL control platform whose content was accepted for publication in the 26th COBEM. The development took place in two stages. In the first stage, it was executed communication testing and configuration of the serial communication protocol between the microcontroller and the simulated aircraft in Matlab Simulink®. Once configured and tested, the HIL platform's autopilot implementation followed.
 
 Serial communication test: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/tree/main/Communication_Tests/Serial_Communication)
 
