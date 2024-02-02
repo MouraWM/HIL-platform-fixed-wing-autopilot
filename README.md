@@ -12,7 +12,7 @@ These modules were implemented from the linearized equations of the mathematical
 The navigation module, responsible for reading the sensors, has not been implemented. Instead, it was considered that this module consists of ideal sensors and all the necessary information for the control and guidance modules is provided directly from the simulated aircraft. 
 The embedded system was made available for the Arduino platform being tested on Atmega (Arduino Uno), Expressif (Esp8266 and ESP32) and STMicroelectronics (STM32F103) microcontrollers. 
 The communication between the HIL and the simulated aircraft takes place through Matlab Simulink® blocks and is made available through of the asynchronous serial communication protocol. 
-The necessary steps for connection, configuration, system loading, execution on the microcontroller, modeling and simulation of the aircraft, are described in:
+The necessary steps for connection, configuration, system loading, execution on the microcontroller, modeling and simulation of the aircraft, are described in: (https://github.com/MouraWM/HIL-platform-fixed-wing-autopilot/COB-2021-1335.pdf)
 
 
 ## System of Autopilot for UAV
